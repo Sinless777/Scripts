@@ -3,8 +3,10 @@
 # Full path to PowerShell executable
 POWERSHELL_PATH="/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe"
 
-# Log file for tracking actions
-LOG_FILE="/mnt/a/Scripts/cookie_clicker.log"
+# Log file with date and time
+LOG_DIR="logs"
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/cookie_clicker_$(date +'%Y-%m-%d_%H-%M-%S').log"
 
 # Colors for formatting
 GREEN='\033[0;32m'
